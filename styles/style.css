@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Victor+Mono:wght@300;700;&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #000000;
+  height: 100vh;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Estilo cabeçalho */
+.menu-desktop{
+  padding: 40px 4%;
+  font-family: 'Victor Mono', sans-serif;
+  font-size: 24px;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+header a{
+  color: #1c8da7;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+  color: #22D4FD;
+  transform: scale(1.05);
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-family: 'Victor Mono', sans-serif;
+  font-weight: 800;
+  color: #1c8da7;
+  background-color: transparent;
+  border: 2px;
+  border-style: solid;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+header .btn-contato button:hover{
+  box-shadow: 0px 0px 8px #22D4FD;
+  color: #22D4FD;
+  transform: scale(1.05);
+}
