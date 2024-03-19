@@ -23,8 +23,8 @@ body{
 .btn-contato button{
   padding: 10px 40px;
   font-size: 18px;
-  font-family: 'Victor Mono', sans-serif;
-  font-weight: 800;
+  font-family: "Victor Mono", sans-serif;
+  font-weight: 700;
   color: #1c8da7;
   background-color: transparent;
   border: 2px;
@@ -34,7 +34,7 @@ body{
   transition: .2s;
 }
 
-.btn-contato button:hover{
+button:hover{
   box-shadow: 0px 0px 8px #22D4FD;
   color: #22D4FD;
   transform: scale(1.05);
@@ -89,8 +89,8 @@ section.topo-site .flex{
 
 .topo-site h1{
   color:#f6f6f6;
-  font-size: 38px;
-  font-family: "JetBrains Mono", sans-serif;
+  font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+  font-family: "Victor Mono", monospace;
   line-height: 40px;
   text-shadow: 2px 2px 4px #22D4FD
 }
@@ -103,7 +103,14 @@ section.topo-site .flex{
   color:#f6f6f6;
   margin: 40px 0px;
   font-family: "Victor Mono",sans-serif;
-  font-size: 28px;
+  font-size: 24px;
+}
+
+.topo-site .list-tools p{
+  margin: 4px 0px;
+  display: flex;
+  justify-content:initial;
+  gap: 20px;
 }
 
 .topo-site .img-perfil img{
@@ -135,6 +142,78 @@ section.topo-site .flex{
   border-color: #22D4FD;
   color: #22D4FD;
   font-size: 26px;
-  font-family:"JetBrains Mono", sans-serif;
+  font-family:"Victor Mono", sans-serif;
+  cursor: pointer;
+  transition: .2s;
+}
 
+/* Estilo rodapé */
+footer {
+  border-top: 1px solid #333;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  background-color: #1c8da7;
+}
+@media screen and (max-width: 820px){
+
+  /* Classes Gerais */
+  .flex{
+    flex-direction: column-reverse;
+  }
+  /* Cabeçalho */
+  /* .menu-desktop, .btn-contato{
+    display: none;
+  } */
+
+  /* Topo Site */
+  
+  section.topo-site{
+    padding: 20px 8%;
+  }
+
+  section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap:60px;
+  }
+  
+  .topo-site h1{
+    font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+    font-family: "Victor Mono", monospace;
+    text-shadow: 2px 2px 4px #22D4FD;
+  }
+
+  .topo-site .img-perfil img{
+    width: 100%;
+  }
+
+  .topo-site .txt-site .btn-social{
+    display:flex;
+    flex-direction: column;
+    width: 240px;
+    height: 60px;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: transparent;
+    border-style:solid;
+    font-size: 6px;
+    font-family:"Victor Mono", sans-serif;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .topo-site .txt-site{
+    padding: 0px 15px 15px 15px;
+    margin-bottom: 40px;
+  }
+
+  /* .btn-social{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center; 
+  } */
 }
