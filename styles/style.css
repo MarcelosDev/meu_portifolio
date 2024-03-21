@@ -13,7 +13,7 @@ body{
 }
 
 .interface{
-  max-width: 1366px;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ body{
 }
 
 .btn-contato button{
-  padding: 10px 40px;
+  padding: 0.62rem 40px;
   font-size: 18px;
   font-weight: 700;
   color: #1c8da7;
@@ -88,7 +88,7 @@ section.topo-site .flex{
 
 .topo-site h1{
   color:#f6f6f6;
-  font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+  font-size: 40px;
   line-height: 40px;
   text-shadow: 2px 2px 4px #22D4FD
 }
@@ -130,7 +130,7 @@ section.topo-site .flex{
   gap: 40px;
 }
 
-.topo-site .txt-site .btn-social button{
+.btn-social button{
   width: 240px;
   height: 60px;
   border-radius: 16px;
@@ -147,7 +147,6 @@ section.topo-site .flex{
 
 section.sobre{
   padding: 40px 4%;
-
 }
 
 .sobre .txt-sobre{
@@ -175,6 +174,7 @@ section.sobre .flex{
 .sobre .txt-sobre p{
   margin: 20px 0;
   text-align: justify;
+  font-size: 1.5em;
 }
 
 /* Estilo rodapé */
@@ -242,12 +242,34 @@ footer {
   .topo-site .txt-site{
     padding: 0px 15px 15px 15px;
     margin-bottom: 40px;
+    text-align: center;
   }
 
-  /* .btn-social{
+  /* Sobre */
+
+  section.sobre{
+    padding: 20px 8%;
+    margin-top: 5rem;
+  }
+  
+  .sobre .txt-sobre h2{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+  
+  .sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .btn-social{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-content: center; 
-  } */
+    align-content: center;
+    margin-top: 8rem; 
+    margin-left: 2rem;
+  } 
 }
