@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #22D4FD);
+  border-radius: 1rem;
+}
+
 body{
   background-color: #000000;
   height: 100vh;
