@@ -237,6 +237,9 @@ footer {
     font-size: 6px;
     cursor: pointer;
     transition: .2s;
+    margin:  0;
+    margin-top: 8rem;
+    padding: 1rem 1rem;
   }
 
   .topo-site .txt-site{
